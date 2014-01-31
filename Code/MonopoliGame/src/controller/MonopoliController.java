@@ -54,7 +54,9 @@ public class MonopoliController {
 				if(IOController.checkEnd()){
 					return false;
 				}else{
-					return true;
+					Console.showMenuGame();
+					int input = IOController.readInputOption();
+					MonopoliController.manageGame(input, currPlay);
 				}
 				
 			case 1:
