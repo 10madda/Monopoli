@@ -52,11 +52,15 @@ public class MonopoliController {
 			case 0:
 				
 				if(IOController.checkEnd()){
+					
 					return false;
+					
 				}else{
+					
 					Console.showMenuGame();
 					int input = IOController.readInputOption();
 					MonopoliController.manageGame(input, currPlay);
+					
 				}
 				
 			case 1:
